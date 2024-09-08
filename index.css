@@ -408,8 +408,8 @@ div.about4 p {
 }
 
 
-@media (max-width: 1101px) {
-    body {
-        width: 1101px;
+@media (max-width: 1105px) {
+    html {
+        width: 1105px;
     }
 }

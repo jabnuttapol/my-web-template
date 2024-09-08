@@ -81,5 +81,3 @@ document.getElementById("form").addEventListener("submit", function (event) {
     document.getElementById("errorMessage").style.display = "block";
   }
 });
-
-
