@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabber</title>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">ABOUT</a>
+            <a href="index.html">ARTIST</a>
+            <img src="img/logo.PNG" alt="logo" width="180px;">
+            <a href="index.html">LOCAL ART GALLERY</a>
+            <a href="index.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about2" id="about2">
+            <div>
+                <img src="img/artist.jpg" alt="artist">
+            </div>
+            <div>
+                <h1>Nuttapol Sathittrakul</h1>
+                <p>I was raised in Bangkok. Often, I found myself headed down the creative path of life. It has always
+                    been
+                    art and music that does it for me.</p>
+                <p>Being an artist and a tattoo collector, I took a serious interest in Tattooing. In 2022 I began a
+                    year
+                    long apprenticeship at a Tattoo Studio near my apartment. I am an extremely passionate person as
+                    well as
+                    a perfectionist and that carries over in my work. I feel very blessed to be able to do exactly what
+                    I
+                    love in tattooing and music as well as being able to provide for my family.</p><br>
+                <h3>IG: @jabber_____</h3><br><br>
+                <div>
+                    <a href="contactus.html">BOOK APPOINTMENT</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="gallery">
+            <img src="img/1.jpg" alt="1" onclick="openLightbox('img/1.jpg')">
+            <img src="img/2.jpg" alt="2" onclick="openLightbox('img/2.jpg')">
+            <img src="img/3.jpg" alt="3" onclick="openLightbox('img/3.jpg')">
+            <img src="img/4.jpg" alt="4" onclick="openLightbox('img/4.jpg')">
+            <img src="img/5.jpg" alt="5" onclick="openLightbox('img/5.jpg')">
+            <img src="img/6.jpg" alt="6" onclick="openLightbox('img/6.jpg')">
+            <img src="img/7.jpg" alt="7" onclick="openLightbox('img/7.jpg')">
+            <img src="img/8.jpg" alt="8" onclick="openLightbox('img/8.jpg')">
+            <img src="img/9.jpg" alt="9" onclick="openLightbox('img/9.jpg')">
+            <img src="img/10.jpg" alt="10" onclick="openLightbox('img/10.jpg')">
+            <img src="img/11.jpg" alt="11" onclick="openLightbox('img/11.jpg')">
+            <img src="img/12.jpg" alt="11" onclick="openLightbox('img/12.jpg')">
+        </div>
+
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-image" src="" alt="Enlarged Image">
+        </div>
+        <br>
+        <hr>
+        <div class="container1">
+            <a href="https://www.instagram.com/jabber_____/" target="_blank">
+                <img src="img/ig.png" alt="ig" width="60px" class="icon">
+            </a>
+            <a href="https://web.facebook.com/jabnuttapol/" target="_blank">
+                <img src="img/fb.png" alt="fb" width="60px" class="icon">
+            </a>
+        </div>
+        <footer>
+            <p>InkJabber, JABNUTTAPOL@GMAIL.COM Design by Jabber</p>
+        </footer>
+
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

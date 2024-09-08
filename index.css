@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+hr {
+    border: none;
+    /* เอาขอบเริ่มต้นของ <hr> ออก */
+    height: 1px;
+    /* ความสูงของเส้น */
+    background-color: rgb(255, 0, 0);
+    ;
+    /* สีของเส้น */
+    width: 99%;
+    /* ความกว้างของเส้น (50% ของความกว้างหน้าจอ) */
+}
+
+header {
+    background-color: #0f0f0f;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    position: sticky;
+    /*ทำให้ header ติดอยู่ที่ด้านบน */
+    top: 0;
+    /*ตำแหน่งติดอยู่ที่ด้านบน */
+    z-index: 1000;
+
+    /*ให้แน่ใจว่า header อยู่เหนือเนื้อหาอื่น */
+    a {
+        color: rgb(255, 255, 255);
+        font-family: "Domine", serif;
+        padding: 0px 60px;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    nav {
+        a:hover {
+            color: rgb(255, 39, 39);
+            /* เปลี่ยนสีพื้นหลังเมื่อวางเมาส์ */
+        }
+    }
+}
+
+main {
+    background-color: #111111;
+}
+
+
+
+a {
+    font-family: "Domine", serif;
+}
+
+
+h1 {
+    color: rgb(255, 39, 39);
+    font-family: "Domine", serif;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: "Domine", serif;
+}
+
+
+h3 {
+    color: rgb(255, 39, 39);
+    font-family: "Domine", serif;
+}
+
+
+p {
+    color: rgb(255, 255, 255);
+    font-family: "Domine", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.about1 {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+}
+
+.about1 img {
+    width: 400px;
+    height: auto;
+    padding: 40px;
+}
+
+
+.about2 {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        background-color: #ebebeb;
+        border: 2px solid #333;
+        /* กำหนดกรอบลิงก์ สีเทาเข้ม */
+        padding: 10px 15px;
+        /* ระยะห่างภายในกรอบ */
+        border-radius: 5px;
+        /* มุมโค้งของกรอบ */
+        transition: all 0.3s ease;
+        /* เพิ่มเอฟเฟ็กต์การเปลี่ยนแปลง */
+    }
+
+    a:hover {
+        background-color: #bdbdbd;
+        /* เปลี่ยนสีพื้นหลังเมื่อวางเมาส์ */
+        border-color: #d60000;
+        /* เปลี่ยนสีกรอบเมื่อวางเมาส์ */
+    }
+}
+
+.about2 img {
+    width: 400px;
+    height: auto;
+    padding: 40px;
+}
+
+
+.about3 {
+    padding: 40px;
+    color: rgb(0, 0, 0);
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        background-color: #ebebeb;
+        border: 2px solid #333;
+        /* กำหนดกรอบลิงก์ สีเทาเข้ม */
+        padding: 10px 15px;
+        /* ระยะห่างภายในกรอบ */
+        border-radius: 5px;
+        /* มุมโค้งของกรอบ */
+        transition: all 0.3s ease;
+        /* เพิ่มเอฟเฟ็กต์การเปลี่ยนแปลง */
+    }
+
+    a:hover {
+        background-color: #bdbdbd;
+        /* เปลี่ยนสีพื้นหลังเมื่อวางเมาส์ */
+        border-color: #d60000;
+        /* เปลี่ยนสีกรอบเมื่อวางเมาส์ */
+    }
+}
+
+
+.about4 {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+}
+
+.about4 img {
+    width: 400px;
+    height: auto;
+    padding: 40px;
+}
+
+
+.location {
+    display: flex;
+    gap: 160px;
+    padding: 40px;
+}
+
+iframe {
+    padding: 40px;
+}
+
+
+.about5 {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+}
+
+#form {
+    color: rgb(255, 255, 255);
+    font-family: "Domine", serif;
+    width: 400px;
+    height: auto;
+    padding: 40px;
+}
+
+
+input[type="submit"] {
+    background-color: #525252;
+    /* สีพื้นหลังของปุ่ม */
+    color: white;
+    /* สีตัวอักษร */
+    padding: 12px 20px;
+    /* ระยะห่างภายในปุ่ม */
+    border: none;
+    /* เอาขอบออก */
+    border-radius: 5px;
+    /* มุมโค้งของปุ่ม */
+    font-size: 16px;
+    /* ขนาดของตัวอักษร */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เมื่อวางเมาส์ */
+    transition: background-color 0.3s ease;
+    /* เพิ่มเอฟเฟกต์การเปลี่ยนแปลง */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+    /* สีพื้นหลังเมื่อวางเมาส์บนปุ่ม */
+}
+
+input[type="submit"]:active {
+    background-color: #3e8e41;
+    /* สีพื้นหลังเมื่อคลิกปุ่ม */
+}
+
+
+#txtName {
+    width: 340px;
+    height: 30px;
+}
+
+#phone {
+    width: 340px;
+    height: 30px;
+}
+
+#email {
+    width: 340px;
+    height: 30px;
+}
+
+#NS {
+    width: 340px;
+    height: 30px;
+}
+
+#text {
+    width: 340px;
+    height: 80px;
+}
+
+
+footer {
+
+    font-family: "Domine", serif;
+    display: flex;
+    /* ใช้ flexbox เพื่อจัดวางองค์ประกอบ */
+    justify-content: center;
+    /* จัดให้อยู่กึ่งกลางในแนวนอน */
+    align-items: center;
+    /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+    height: 100px;
+    /* กำหนดความสูงของ footer */
+    background-color: #0f0f0f;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* จัดข้อความให้อยู่กึ่งกลาง (สำรอง) */
+
+}
+
+
+.gallery {
+    text-align: center;
+    /* จัดกึ่งกลางรูปภาพ */
+}
+
+.gallery img {
+    display: inline-block;
+    /* ทำให้รูปภาพเรียงกันในแถวเดียว */
+    width: 300px;
+    /* ขนาดรูปภาพ */
+    height: auto;
+    /* รักษาสัดส่วนของรูปภาพ */
+    margin: 5px;
+    /* ระยะห่างระหว่างรูปภาพ */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เป็นรูปมือชี้ */
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    /* ขยายเล็กน้อยเมื่อชี้ที่รูปภาพ */
+
+}
+
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icon {
+    width: 50px;
+    /* กำหนดความกว้างของรูปภาพ */
+    height: auto;
+    /* ปรับความสูงของรูปภาพตามสัดส่วน */
+    border-radius: 12px;
+    /* ทำให้ขอบของรูปภาพโค้งมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* เพิ่มเงาให้กับรูปภาพ */
+    transition: transform 0.3s ease;
+
+    /* เพิ่มการเปลี่ยนแปลงเมื่อโฮเวอร์ */
+    /* สไตล์เมื่อโฮเวอร์ที่รูปภาพ */
+    icon:hover {
+        transform: scale(1.05);
+        /* ขยายรูปภาพเมื่อโฮเวอร์ */
+    }
+}
+
+.container1 {
+    display: flex;
+    /* ใช้ Flexbox ในการจัดวาง */
+    justify-content: center;
+    /* จัดวางรูปภาพให้อยู่กึ่งกลางในแนวนอน */
+    gap: 10px;
+    background-color: #0f0f0f;
+}
+
+
+.form-control.error input {
+    border-color: red;
+    border-width: 2px;
+    /* ความหนาของเส้นขอบ */
+    border-style: solid;
+    /* ลักษณะของเส้นขอบ เช่น solid, dashed, dotted */
+}
+
+.form-control.success input {
+    border-color: green;
+}
+
+.form-control small {
+    color: red;
+    position: absolute;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+
+
+.message {
+    font-size: 20px;
+    color: rgb(0, 214, 0);
+    display: none;
+    /* ซ่อนข้อความเริ่มต้น */
+}
+
+.error {
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    display: none;
+    /* ซ่อนข้อความเริ่มต้น */
+}
+
+div p {
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+}
+
+div.about1 p,
+div.about2 p,
+div.about4 p {
+    text-indent: 30px;
+}
+
+
+@media (max-width: 1101px) {
+    body {
+        width: 1101px;
+    }
+}

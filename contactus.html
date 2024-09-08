@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">ABOUT</a>
+            <a href="index.html">ARTIST</a>
+            <img src="img/logo.PNG" alt="logo" width="180px;">
+            <a href="index.html">LOCAL ART GALLERY</a>
+            <a href="index.html">CONTACT</a>
+        </nav>
+    </header>
+    <main>
+        <div class="location" id="location">
+            <div>
+                <h1>The Ink Jabeer Tattoo</h1><br>
+                <p>Location:</p><br>
+                <p>Wichian Jamnong, Thani Subdistrict, Mueang Sukhothai District, Sukhothai 64000</p><br>
+                <p>17.015844, 99.824567</p>
+            </div>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3815.1595143270247!2d99.824567!3d17.015843999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDAwJzU3LjAiTiA5OcKwNDknMjguNCJF!5e0!3m2!1sen!2sth!4v1725007474716!5m2!1sen!2sth"
+                    width="600" height="440" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">"
+                    width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                </iframe>
+            </div>
+        </div>
+        <hr>
+
+        <div class="about5" id="about5">
+            <div>
+                <h1>Contact Us</h1>
+                <p>Provide as much written detail as you can regarding your desired tattoo, appointment availability,
+                    and
+                    budget ($150.00 minimum), and we will get back to you as soon as we can.</p>
+                <p>All deposits are non refundable.</p>
+                <p>You must be 18 years of age to get tattooed.</p>
+                <p>TOUCH UPS (please read!!!!)</p>
+                <p>Any touch ups on tattoos are up to the artist discretion. 4 weeks is enough time to know if your
+                    tattoo
+                    needs to be touched up by the artist and schedule your appointment.( any time after that is
+                    considered
+                    natural aging.)</p>
+                <p>Please check your spam folder for our response a few days after sending— some of our replies have
+                    been
+                    going there.</p>
+            </div>
+
+            <div class="container">
+                <form id="form" class="form" method="post" autocomplete="off">
+                    <div class="form-control">
+                        <label for="txtName">Name:</label>
+                        <input id="txtName" type="text" name="" required>
+                        <small>Name is required.</small>
+                    </div> <br>
+
+                    <div class="form-control">
+                        <label for="phone">Phone:</label>
+                        <input id="phone" type="tel" pattern="[0-9]{10}" name="" required>
+                        <small>Phone is required.</small>
+                    </div><br>
+
+                    <div class="form-control">
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="" required>
+                        <small>Email is required.</small>
+                    </div><br>
+
+
+                    <div>
+                        Preferred Artist:
+                        <select name="" id="NS">
+                            <option selected="selected">Nuttapol Sathittrakul</option>
+                        </select>
+                    </div><br>
+
+                    <div class="form-control">
+                        Detailed description of tattoo and budget:
+                        <textarea id="text" type="text" required></textarea>
+                        <small>Detailed description of tattoo and budget is required.</small>
+                    </div><br><br>
+
+
+                    <input type="submit" value="Submit">
+
+                    <p id="successMessage" class="message">Thank you! Expect a response within a few days.</p>
+                    <p id="errorMessage" class="error">required.</p>
+                </form>
+
+
+
+            </div>
+        </div>
+        <hr>
+        <div class="container1">
+            <a href="https://www.instagram.com/jabber_____/" target="_blank">
+                <img src="img/ig.png" alt="ig" width="60px" class="icon">
+            </a>
+            <a href="https://web.facebook.com/jabnuttapol/" target="_blank">
+                <img src="img/fb.png" alt="fb" width="60px" class="icon">
+            </a>
+        </div>
+        <footer>
+            <p>InkJabber, JABNUTTAPOL@GMAIL.COM Design by Jabber</p>
+        </footer>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
