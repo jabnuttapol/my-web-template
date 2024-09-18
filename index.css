@@ -19,7 +19,7 @@ hr {
 }
 
 header {
-    background-color: #0f0f0f;
+    background-color: #000000ee;
     color: rgb(255, 255, 255);
     padding: 10px 20px;
     display: flex;
@@ -48,7 +48,15 @@ header {
             /* เปลี่ยนสีพื้นหลังเมื่อวางเมาส์ */
         }
     }
+
+    ul{
+        list-style-type: none;
+    }
+    li{
+        display: inline;
+    }
 }
+
 
 main {
     background-color: #111111;
@@ -177,7 +185,7 @@ p {
 
 .location {
     display: flex;
-    gap: 160px;
+    gap: 20px;
     padding: 40px;
 }
 
@@ -258,7 +266,6 @@ input[type="submit"]:active {
 
 
 footer {
-
     font-family: "Domine", serif;
     display: flex;
     /* ใช้ flexbox เพื่อจัดวางองค์ประกอบ */
@@ -272,7 +279,6 @@ footer {
     color: rgb(255, 255, 255);
     text-align: center;
     /* จัดข้อความให้อยู่กึ่งกลาง (สำรอง) */
-
 }
 
 
@@ -408,8 +414,45 @@ div.about4 p {
 }
 
 
-@media (max-width: 1105px) {
-    html {
-        width: 1105px;
+@media (max-width: 1145px) {
+    html{
+        display: flex;
+        flex-wrap: wrap;
     }
+    .logo{
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .artGallery{
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .book{
+        display: none;
+    }
+}
+
+@media (max-width: 730px) {
+    .book2{
+        display: none;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 1450px) {
+    .map{
+        margin-left: auto;
+    }
+}
+
+.footer{
+    padding-top: 20px;
+    background-color: #0f0f0f;
 }

@@ -14,11 +14,13 @@
 
     <header>
         <nav>
-            <a href="#about1">ABOUT</a>
-            <a href="#about2">ARTIST</a>
-            <img src="img/logo.PNG" alt="logo" width="180px;">
-            <a href="#about4">LOCAL ART GALLERY</a>
-            <a href="#location">CONTACT</a>
+            <ul>
+                <li><a href="#about1">ABOUT</a></li>
+                <li><a href="#about2">ARTIST</a></li>
+                <img src="img/logo.PNG" alt="logo" width="180px;" class="logo">
+                <li><a href="#about4" class="artGallery">LOCAL ART GALLERY</a></li>
+                <li><a href="#location">CONTACT</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -74,7 +76,7 @@
                 <h3>IG: @jabber_____</h3><br><br>
                 <div class="button">
                     <a href="seework.html" target="_blank">SEE WORK</a>
-                    <a href="contactus.html">BOOK APPOINTMENT</a>
+                    <a href="contactus.html" class="book">BOOK APPOINTMENT</a>
                 </div>
             </div>
         </div>
@@ -123,7 +125,7 @@
                 <p>Wichian Jamnong, Thani Subdistrict, Mueang Sukhothai District, Sukhothai 64000</p><br>
                 <p>17.015844, 99.824567</p>
             </div>
-            <div>
+            <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3815.1595143270247!2d99.824567!3d17.015843999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDAwJzU3LjAiTiA5OcKwNDknMjguNCJF!5e0!3m2!1sen!2sth!4v1725007474716!5m2!1sen!2sth"
                     width="600" height="440" style="border:0;" allowfullscreen="" loading="lazy"
@@ -153,7 +155,7 @@
             </div>
 
             <div class="container">
-                <form id="form" class="form" method="post" autocomplete="off">
+                <form id="form" class="form" method="post" autocomplete="off" action="">
                     <div class="form-control">
                         <label for="txtName">Name:</label>
                         <input id="txtName" type="text" name="txtname" value="" required>
@@ -199,6 +201,7 @@
         </div>
         <hr>
 
+    <div class="footer">
         <div class="container1">
             <a href="https://www.instagram.com/jabber_____/" target="_blank">
                 <img src="img/ig.png" alt="ig" width="60px" class="icon">
@@ -207,10 +210,10 @@
                 <img src="img/fb.png" alt="fb" width="60px" class="icon">
             </a>
         </div>
-
         <footer>
             <p>InkJabber, JABNUTTAPOL@GMAIL.COM Design by Jabber</p>
         </footer>
+    </div>
 
     </main>
 

@@ -8,7 +8,6 @@ function closeLightbox() {
 }
 
 
-
 const form = document.getElementById('form');
 const Name = document.getElementById('txtName');
 const Phone = document.getElementById('phone');
@@ -51,7 +50,6 @@ function showSuccess(input) {
   const formControl = input.parentElement;
   formControl.className = 'form-control success';
 }
-
 
 
 document.getElementById("form").addEventListener("submit", function (event) {
