@@ -452,6 +452,21 @@ html{
     }
 }
 
+@media (max-width: 920px) {
+    #location{
+        display: block;
+    }
+    img{
+        display: none;
+    }
+}
+
+@media (max-width: 730px) {
+    #about5{
+        display: block;
+    }
+}
+
 .footer{
     padding-top: 20px;
     background-color: #0f0f0f;
